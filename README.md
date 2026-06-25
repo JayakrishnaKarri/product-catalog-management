@@ -40,13 +40,12 @@ This is a comprehensive **Product Catalog Management System** project. The proje
 
 | Component | Technology | Version |
 |-----------|------------|---------|
-| **Framework** | Spring Boot | 3.2.0 |
-| **Web Layer** | Spring MVC | 6.1.x |
-| **Validation** | Bean Validation (JSR-380) | 3.0.x |
-| **Documentation** | OpenAPI 3.0 (Swagger) | 2.2.0 |
-| **Testing** | JUnit 5, Mockito, AssertJ | 5.10.x |
+| **Framework** | Spring Boot | 3.5.x |
+| **Web Layer** | Spring MVC | 6.2.x |
+| **Validation** | Jakarta Bean Validation | 3.1 |
+| **Documentation** | Documentation: springdoc-openapi (OpenAPI 3) | 2.8.x |
 | **Build Tool** | Maven | 3.9.x |
-| **Java Version** | OpenJDK | 17 |
+| **Java Version** | Oracle JDK | 21 |
 | **Storage** | In-Memory (ConcurrentHashMap) | - |
 
 ## 📋 API Endpoints
