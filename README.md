@@ -100,7 +100,7 @@ graph TB
 | **🌐 Web Layer** | Spring MVC | `6.2.x` | REST API implementation |
 | **☕ Runtime** | Java | `21` | Programming language |
 | **📦 Build Tool** | Maven | `3.9+` | Dependency management |
-| **✅ Validation** | Jakarta Bean Validation | `3.1` | Input validation |
+| **✅ Validation** | Jakarta Bean Validation | `3.1.0` | Input validation |
 | **📚 Documentation** | SpringDoc OpenAPI | `2.8.17` | API documentation |
 | **📊 Monitoring** | Spring Actuator | `3.5.15` | Health & metrics |
 | **💾 Storage** | ConcurrentHashMap | `Java 21` | In-memory data store |
@@ -269,8 +269,8 @@ Once the application is running, access these endpoints:
 | Service | URL | Description |
 |---------|-----|-------------|
 | 🏠 **API Base** | http://localhost:8080 | Main API endpoint |
-| 📚 **Swagger UI** | http://localhost:8080/swagger-ui.html | Interactive API documentation |
-| 📋 **API Docs** | http://localhost:8080/api-docs | OpenAPI specification |
+| 📚 **Swagger UI** | http://localhost:8080/swagger-ui/index.html | Interactive API documentation |
+| 📋 **API Docs** | http://localhost:8080/v3/api-docs | OpenAPI specification |
 | ❤️ **Health Check** | http://localhost:8080/actuator/health | Application health status |
 | 📊 **Metrics** | http://localhost:8080/actuator/metrics | Application metrics |
 
@@ -557,7 +557,7 @@ docker run -p 8080:8080 product-catalog-api
 #### 🔧 Implementation Skills
 - ✅ **Controller Design** - [`@RestController`](src/main/java/com/example/productcatalog/controller/ProductController.java), [`@RequestMapping`](src/main/java/com/example/productcatalog/controller/ProductController.java)
 - ✅ **Request Handling** - [`@PathVariable`](src/main/java/com/example/productcatalog/controller/ProductController.java), [`@RequestParam`](src/main/java/com/example/productcatalog/controller/ProductController.java), [`@RequestBody`](src/main/java/com/example/productcatalog/controller/ProductController.java)
-- ✅ **Validation** - [`@Valid`](src/main/java/com/example/productcatalog/dto/CreateProductRequest.java), JSR-380 annotations
+- ✅ **Validation** - [`@Valid`](src/main/java/com/example/productcatalog/dto/CreateProductRequest.java), Jakarta Bean Validation annotations
 - ✅ **Exception Handling** - [`@ControllerAdvice`](src/main/java/com/example/productcatalog/exception/GlobalExceptionHandler.java), [`@ExceptionHandler`](src/main/java/com/example/productcatalog/exception/GlobalExceptionHandler.java)
 
 </td>
@@ -574,8 +574,8 @@ docker run -p 8080:8080 product-catalog-api
 
 | Resource | Description | URL |
 |----------|-------------|-----|
-| 📚 **API Docs** | Interactive API documentation | `/swagger-ui.html` |
-| 📋 **OpenAPI Spec** | Machine-readable API specification | `/api-docs` |
+| 📚 **API Docs** | Interactive API documentation | `/swagger-ui/index.html` |
+| 📋 **OpenAPI Spec** | Machine-readable API specification | `/v3/api-docs` |
 | ❤️ **Health Check** | Application health status | `/actuator/health` |
 | 📊 **Metrics** | Application performance metrics | `/actuator/metrics` |
 
