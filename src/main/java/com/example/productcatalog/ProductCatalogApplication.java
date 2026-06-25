@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * - CORS configuration
  * - OpenAPI documentation
  */
+
 @SpringBootApplication
 public class ProductCatalogApplication {
 
