@@ -99,11 +99,11 @@ graph TB
 | **🔧 Framework** | Spring Boot | `3.5.15` | Application framework |
 | **🌐 Web Layer** | Spring MVC | `6.2.x` | REST API implementation |
 | **☕ Runtime** | Java | `21` | Programming language |
-| **📦 Build Tool** | Maven | `3.9+` | Dependency management |
+| **📦 Build Tool** | Maven | `3.9.x` | Dependency management |
 | **✅ Validation** | Jakarta Bean Validation | `3.1.0` | Input validation |
 | **📚 Documentation** | SpringDoc OpenAPI | `2.8.17` | API documentation |
 | **📊 Monitoring** | Spring Actuator | `3.5.15` | Health & metrics |
-| **💾 Storage** | ConcurrentHashMap | `Java 21` | In-memory data store |
+| **💾 Storage** | ConcurrentHashMap | `In-Memory` | In-memory data store |
 
 </div>
 
@@ -169,7 +169,6 @@ graph TB
 ### 🏷️ Product Entity
 
 ```java
-@Entity
 public class Product {
     private Long id;                    // Auto-generated unique identifier
     private String name;               // 2-100 chars, unique, alphanumeric + spaces/hyphens
@@ -223,8 +222,8 @@ stateDiagram-v2
 <td>
 
 **Required Software**
-- ☕ **Java 21** or higher
-- 📦 **Maven 3.9+**
+- ☕ **Java 21** (LTS)
+- 📦 **Maven 3.9.x**
 - 🔧 **IDE** (IntelliJ IDEA, Eclipse, VS Code)
 
 </td>
@@ -465,6 +464,7 @@ logging.file.name=logs/product-catalog-api.log
     maxAge = 3600
 )
 ```
+**Note**: This configuration is intended for development. In production, configure explicit allowed origins.
 
 ### ⚙️ Application Configuration
 
@@ -484,9 +484,6 @@ spring.web.error.include-binding-errors=always
 spring.jackson.default-property-inclusion=non_null
 spring.jackson.time-zone=UTC
 
-# OpenAPI Documentation
-springdoc.api-docs.path=/api-docs
-springdoc.swagger-ui.path=/swagger-ui.html
 ```
 
 </details>
@@ -577,7 +574,7 @@ java -jar app.jar --server.port=8081
 # Check Java version
 java --version
 
-# Ensure Java 21 or higher is installed
+# Ensure Java 21 (LTS)
 ```
 
 </details>
