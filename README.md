@@ -17,7 +17,7 @@
 
 ## 🎯 Project Overview
 
-This is a **Phase 2 Mini Project** demonstrating advanced Spring MVC concepts and REST API design patterns. The project showcases a complete product catalog management system with comprehensive validation, error handling, and modern API practices.
+This is a **Mini Project** demonstrating advanced Spring MVC concepts and REST API design patterns. The project showcases a complete product catalog management system with comprehensive validation, error handling, and modern API practices.
 
 ### 🏗️ System Architecture
 
@@ -226,14 +226,6 @@ stateDiagram-v2
 - ☕ **Java 21** or higher
 - 📦 **Maven 3.9+**
 - 🔧 **IDE** (IntelliJ IDEA, Eclipse, VS Code)
-
-</td>
-<td>
-
-**System Requirements**
-- 💾 **RAM**: 4GB minimum, 8GB recommended
-- 💿 **Storage**: 500MB free space
-- 🌐 **Network**: Internet connection for dependencies
 
 </td>
 </tr>
@@ -514,21 +506,6 @@ java -jar target/product-catalog-api-1.0.0.jar
 
 # With custom profile
 java -jar target/product-catalog-api-1.0.0.jar --spring.profiles.active=prod
-```
-
-### 🐳 Docker Deployment (Optional)
-
-```dockerfile
-FROM openjdk:21-jre-slim
-COPY target/product-catalog-api-1.0.0.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app.jar"]
-```
-
-```bash
-# Build and run with Docker
-docker build -t product-catalog-api .
-docker run -p 8080:8080 product-catalog-api
 ```
 
 ---
